@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Navigator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="top-bar">
+    <h1>🏫 Campus Navigator</h1>
+    <input type="text" id="search" placeholder="Search a block..." />
+  </div>
+
+  <div id="map-wrapper">
+    <div id="map-container">
+      <img id="campus-map" src="map.drawio.png" alt="Campus Map" />
+      <svg id="svg-overlay" viewBox="0 0 1022 768">
+        <!-- 🔥 Example glowing building -->
+        <path
+          id="new-block"
+          class="svg-glow map-block"
+          d="M 711.3 365.0 L 598.6 562.7 L 448.3 477.3 L 475.9 431.3 L 579.0 489.1 L 663.1 336.2 Z"
+        />
+        <path
+  id="science-block"
+  class="svg-glow map-block"
+  d="M 538.06 542.52 L 568.36 564.25 L 558.56 588.61 L 526.48 573.58 L 537.17 542.52 L 520.24 579.05 L 464.11 552.32 L 490.84 496.94 L 543.41 528.26 L 537.17 542.52
+M 332.24 499.75 L 387.48 531.82 L 376.79 550.53 L 415.99 572.81 L 427.58 554.99 L 456.98 571.92 L 466.78 554.99 L 478.36 522.91 L 358.97 453.42 L 333.13 498.86
+M 419.56 417.78 L 440.94 429.36 L 409.76 483.71 L 363.42 456.98
+C 370.0 445.69 376.59 434.4 383.17 420.34 L 385.81 417.78 L 380.35 412.32 L 378.57 409.45 L 377.68 405.89 L 377.68 401.63 L 377.68 399.85 L 380.35 395.39 L 383.17 392.53 L 388.37 389.65 L 392.0 389.65 L 397.28 390.53 L 401.74 394.0 L 405.3 400.74 L 405.3 408.87 L 419.56 417.78
+M 347.39 476.58 L 290.36 443.61 L 281.45 458.76 L 362.75 491.73
+M 248.49 395.39 L 279.67 344.71 L 317.09 366.1 L 250.27 480.15 L 211.96 459.65
+M 285.01 420.45 L 298.38 428.47 L 254.72 505.1 L 216.41 482.82 L 228.0 463.22
+M 193.24 447.18 L 215.25 411.99 L 228.28 387.81 L 248.49 395.39 L 211.96 458.76 L 211.96 458.76 L 193.24 448.07"
+/>
+
+        <!-- Add more buildings here -->
+      </svg>
+    </div>
+  </div>
+
+  <div id="info-box"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
